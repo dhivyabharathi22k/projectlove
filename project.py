@@ -13,21 +13,24 @@ def home():
 
 @app.route("/letter", methods=["GET", "POST"])
 def letter():
-
     if request.method == "POST":
-
-        date = request.form["date"]
+        date = request.form.get("date")
 
         if date == special_date:
-            return redirect(url_for("memories"))
-
+            return redirect(url_for("success"))
         else:
-            return render_template(
-                "letter.html",
-                message="Wrong date! Try again, my love ❤️"
-            )
+            return redirect(url_for("wrong"))
+    return render_template("letter.html")
 
-    return render_template("letter.html", message="")
+@app.route("/success")
+def success():
+    return render_template("sucess.html")
+
+
+# Wrong date page
+@app.route("/wrong")
+def wrong():
+    return render_template("wrong.html")
 
 
 @app.route("/memories")
