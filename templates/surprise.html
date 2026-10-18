@@ -47,9 +47,21 @@
             font-size: 20px;
         }
 
-        a {
+        .e {
             display: inline-block;
             background: #ff4d88;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+         .song:hover{
+            color: #f586abde;
+        }
+        .song a {
+            display: inline-block;
+            backgroun: #610423de;
             color: white;
             padding: 15px 25px;
             border-radius: 30px;
@@ -103,12 +115,19 @@
             <br>
             Divya sikki
         </p>
+       
 
     </div>
 
-    <a href="{{ url_for('home') }}">
+  
+<div class="song">
+    <a href="https://youtube.com/shorts/wZlwmzdKFRk?si=UqlU2U2LzqDJiaom" target="_blank">
+        <button onclick="document.getElementById('audio').play()">Dedicated to you🎵</button>
+    </a>
+      <br>
+     <a  class=e href="{{ url_for('home') }}">
         RELIVE OUR STORY ❤️
     </a>
-
+ </div>
 </body>
 </html>
