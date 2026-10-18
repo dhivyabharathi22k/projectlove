@@ -4,6 +4,7 @@ app = Flask(__name__)
 
 # Unga special date-ai inga change pannikko
 special_date = "14-06-2022"
+birthday = "11-12-2002"
 
 
 @app.route("/")
@@ -15,8 +16,9 @@ def home():
 def letter():
     if request.method == "POST":
         date = request.form.get("date")
+        birthdate = request.form.get("birthdate")
 
-        if date == special_date:
+        if date == special_date and birthdate == birthday:
             return redirect(url_for("success"))
         else:
             return redirect(url_for("wrong"))

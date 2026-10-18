@@ -10,10 +10,19 @@
         body {
             background-image: url('{{ url_for('static', filename='images/love1.jpeg')  }}');
             background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+
+            minimum-height: 100vh;
+            margin: 0;
+            padding: 100px 15px;
+            box-sizing: border-box;
+
             color:darkviolet;
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 100px 15px;
+        
         }
 
         h1 {

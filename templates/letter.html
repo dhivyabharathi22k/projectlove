@@ -9,7 +9,12 @@
 
     <style>
         body {
-            background: linear-gradient(135deg, #240018, #800040);
+            background-image: url('{{ url_for('static', filename='images/surprise1.jpeg')  }}');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+
             color: white;
             font-family: Arial, sans-serif;
             text-align: center;
@@ -17,7 +22,7 @@
         }
 
         h1 {
-            color: pink;
+            color: #e60073;
         }
 
         input {
@@ -41,6 +46,10 @@
 
         p {
             line-height: 1.8;
+
+        }
+        a.hover {
+            background: #820792;
         }
     </style>
 </head>
@@ -63,7 +72,14 @@
             placeholder="DD-MM-YYYY"
             required
         >
-
+        <br><br>
+        <input
+            type="text"
+            name="birthdate"
+            placeholder="DD-MM-YYYY"
+            required
+        >
+        <br><br>
         <button type="submit">
             UNLOCK MY HEART ❤️
         </button>
