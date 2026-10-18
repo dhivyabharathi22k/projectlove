@@ -1,0 +1,76 @@
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Forever Us ❤️</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #170018, #650033);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 100px 15px;
+        }
+
+        h1 {
+            color: pink;
+            font-size: 40px;
+        }
+
+        .heart {
+            font-size: 80px;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        a {
+            display: inline-block;
+            background: #ff4d88;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-top: 25px;
+        }
+
+        a:hover {
+            background: #ff0066;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="heart">❤️</div>
+
+    <h1>Hey, My Favourite Person!</h1>
+
+    <p>
+        I made something special for you. 🥹♾️
+        <br>
+        A little world made only for us.
+    </p>
+
+    <p>
+        Ready to enter our love story?
+    </p>
+
+    <a href="{{ url_for('letter') }}">
+        OPEN YOUR SURPRISE 💌
+    </a>
+
+</body>
+</html>

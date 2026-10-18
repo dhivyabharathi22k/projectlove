@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Memories ❤️</title>
+
+    <style>
+        body {
+            
+            background: #200018;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        h1 {
+            color: pink;
+        }
+
+        .photo {
+            background: #4a1038;
+            padding: 15px;
+            margin: 20px auto;
+            border-radius: 20px;
+            max-width: 500px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        a {
+            display: inline-block;
+            background: #ff4d88;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Our Little Universe ❤️</h1>
+
+    <p>Every memory with you is special. 🥹</p>
+
+    <div class="photo">
+        <img src="{{ url_for('static', filename='images/love3.jpeg') }}"
+             alt="Our first memory">
+
+        <h3>Our love ✨</h3>
+
+        <p>You make my whole world beautiful.💕</p>
+    </div>
+
+    <div class="photo">
+        <img src="{{ url_for('static', filename='images/love4.jpeg') }}"
+             alt="Falling for you">
+
+        <h3>My Happy Place ❤️</h3>
+
+        <p>You make ordinary moments special.</p>
+    </div>
+
+    <div class="photo">
+        <img src="{{ url_for('static', filename='images/love6.jpeg') }}"
+             alt="Our Moments">
+
+        <h3>Just You and Me ❤️‍🩹</h3>
+
+        <p>My favourite memories have you in them🥺</p>
+    </div>
+    <div class="photo">
+        <img src="{{ url_for('static', filename='images/Memories.jpeg') }}"
+             alt="Our Moments">
+
+         <h3>Our Memories ❤️</h3>
+        <p>Here's to many more memories together. 🥹</p>
+
+
+
+    </div>
+    <div class="photo">
+        <img src="{{ url_for('static', filename='images/love8.jpeg') }}"
+             alt="Our future">
+
+        <h3>Our Future Together 🫶</h3>
+        <p>Here's to many more memories together. 🥹</p>
+    </div>
+    <div class="photo">
+        <img src="{{ url_for('static', filename='images/love6.jpeg') }}"
+             alt="Our future">
+
+
+         <h3>Together 🫶</h3>
+    </div>
+    <div class="photo">
+        <img src="{{ url_for('static', filename='images/love5.jpeg') }}"
+             alt="Our future">
+             <h3>Us always and forever♾️</h3>
+             <p>you are my everything.🥹</p>
+
+    </div>         
+
+        
+    <div class="photo">
+        <img src="{{ url_for('static', filename='images/future.jpeg') }}">
+             <h3>Our Future🤍</h3>
+             <p>I can't wait to create more memories with you. 🥹</p>
+    </div>         
+   
+             
+    <a href="{{ url_for('surprise') }}">
+        ONE LAST SURPRISE 🥺
+    </a>
+
+</body>
+</html>
